@@ -1,12 +1,12 @@
 package eu.braincluster;
 
 /**
- * A simple immutable Person class
+ * A simple immutable person class
  */
 public final class Person
 {
-    private String firstName;
-    private String lastName;
+    private final String firstName;
+    private final String lastName;
 
     /**
      * Person constructor
@@ -33,12 +33,8 @@ public final class Person
     @Override
     public String toString()
     {
-        final StringBuilder sb = new StringBuilder("Person{");
-
-        sb.append("firstName='").append(firstName).append('\'');
-        sb.append(", lastName='").append(lastName).append('\'');
-        sb.append('}');
-
-        return sb.toString();
+        return "Person{" + "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
     }
 }

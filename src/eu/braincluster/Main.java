@@ -9,6 +9,11 @@ public class Main
         System.out.println(person1);
 
         var person2 = new Person("Sherlock", "Holmes");
-        System.out.println(person2);
+        System.out.println(person2.getLastName() + ", " + person2.getFirstName());
+
+        var person3 = new PersonRecord("John", "Watson");
+        System.out.println(person3.lastName() + ", " + person3.firstName());
+        System.out.println(person3.getFullName());
+        System.out.println(person3);
     }
 }
